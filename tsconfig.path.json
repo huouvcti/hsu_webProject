@@ -5,6 +5,7 @@
         "@pages/*": ["src/pages/*"],
         "@fonts/*": ["src/assets/fonts/*"],
         "@images/*": ["src/assets/images/*"],
+        "@videos/*": ["src/assets/videos/*"],
         "@styles/*": ["src/styles/*"],
         "@components/*": ["src/components/*"],
       }
