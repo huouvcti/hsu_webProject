@@ -45,8 +45,8 @@ const Header = () => {
 
                     <ul>
                         <li><Link to="/tools/rgbHex">RGB - HEX</Link></li>
-                        <li><Link to="/tools/pxEm">PX - EM</Link></li>
-                        <li><Link to="https://www.base64decode.org/ko/" className="external_link">Base64</Link></li>
+                        <li><Link to="/tools/Base64">Base64</Link></li>
+                        <li><Link to="https://www.toolo.kr/pxtoem/" className="external_link">PX - EM</Link></li>
                         <li><Link to="https://resttesttest.com/" className="external_link">Rest test</Link></li>
                     </ul>
                 </div> 

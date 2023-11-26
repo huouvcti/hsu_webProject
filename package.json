@@ -10,11 +10,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fullpage/react-fullpage": "^0.1.40",
+    "animejs": "^3.2.1",
+    "aos": "^2.3.4",
     "feather-icons": "^4.29.1",
+    "install": "^0.13.0",
     "node-sass": "^9.0.0",
+    "npm": "^10.2.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.20.0",
+    "react-scroll": "^1.9.0",
     "sass": "^1.69.5"
   },
   "devDependencies": {

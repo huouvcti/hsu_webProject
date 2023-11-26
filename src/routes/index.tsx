@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Header from "@components/header/header";
 import Footer from "@components/footer/footer";
 
+import TopBtn from "@components/topBtn";
 
 import Home from "@pages/home";
 
@@ -26,6 +27,7 @@ import Assets_images from "@pages/assets/assets_images";
 
 import Tools from "@pages/tools/tools";
 import Tools_rgbHex from "@pages/tools/tools_rgbHex";
+import Tools_base64 from "@pages/tools/tools_base64";
 
 const RootRoutes = () => {
     return (
@@ -55,7 +57,10 @@ const RootRoutes = () => {
 
                 <Route path="/tools" element={<Tools/>} />
                 <Route path="/tools/rgbHex" element={<Tools_rgbHex/>} />
+                <Route path="/tools/base64" element={<Tools_base64/>} />
             </Routes>
+
+            <TopBtn></TopBtn>
             
             <Footer></Footer>
         </>

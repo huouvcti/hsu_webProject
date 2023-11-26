@@ -22,7 +22,7 @@ const Library = () => {
 
                 <div className="menuDes">
                     <h1>Library</h1>
-                    <p>웹 기술과 라이브러리들을 소개합니다.</p>
+                    <p>웹 디자인에 활용하기 좋은 라이브러리들을 소개합니다.</p>
                 </div>
                 
                 <div className="cardWrap">
