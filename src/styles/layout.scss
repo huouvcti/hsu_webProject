@@ -1,9 +1,12 @@
+$primary_color: #1c3753;
+
+
 header.header {
     position: relative;
     padding: 0 50px;
     min-height: 50px;
     
-    background-color: #b1d1f8;
+    background-color: $primary_color;
     
 
     border-bottom: 1px solid #f5f5f5;
@@ -93,8 +96,8 @@ header.header {
         display: flex;
         justify-content: flex-end;
         
-        background-color: rgba(#b1d1f8, 0.5);
-        border-bottom: 1px solid #000;
+        background-color: rgba($primary_color, 0.5);
+        border-bottom: 1px solid $primary_color;
         
         ul {
             display: flex;
@@ -110,9 +113,14 @@ header.header {
                 height: 50px;
 
                 a {
-                    color: gray;
+                    color: #fff;
                 }
             }
+        }
+
+        .external_link {
+            color: $primary_color;
+            font-weight: bold;
         }
     }
 }
@@ -135,7 +143,7 @@ section {
 
 .mainMenu {
     width: 1440px;
-    margin: 0 auto;
+    margin: 50px auto;
 
 
     .menuDes {
@@ -170,8 +178,9 @@ section {
         
 
         .card {
-            background-color: #f5f5f5;
+            
             border: 1px solid #f5f5f5;
+            box-shadow: 0px 5px 5px #ccc;
             border-radius: 10px;
 
             display: flex;
@@ -194,11 +203,11 @@ section {
                     border-top-left-radius: 10px;
                     
                     position: absolute;
-                    top: 10%;
-                    left: 10%;
-                    width: 80%;
-                    height: 80%;
-                    object-fit: contain;
+                    top: 0%;
+                    left: 0%;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
                     object-position: center;
 
                     transition: 0.5s;
@@ -206,6 +215,10 @@ section {
             }
 
             p {
+                background-color: $primary_color;
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+
                 height: 50px;
 
                 display: flex;
@@ -214,7 +227,7 @@ section {
 
                 text-decoration: none;
                 font-weight: bold;
-                color: #000;
+                color: #fff;
             }
         }
 
@@ -228,11 +241,38 @@ section {
 
 .subMenu {
     width: 1440px;
-    margin: 0 auto;
+    margin: 50px auto;
+
+    .navList {
+        width: 500px;
+        
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+
+        background-color: rgba($primary_color, 0.5);
+        border-left: 5px solid $primary_color;
+        color: #fff;
+
+        a {
+            font-weight: bold;
+            color: #fff;
+
+            display: flex;
+            align-items: center;
+        }
+
+        svg {
+            stroke-width: 1.5px;
+        }
+    }
 
 
     .inform {
         margin-top: 50px;
+        margin-bottom: 50px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 50px;
@@ -241,11 +281,13 @@ section {
             border: 1px solid #f5f5f5;
             overflow: hidden;
             width: 100%;
-            height: 100%;
+            height: 400px;
 
             img {
                 width: 100%;
                 height: 100%;
+                object-fit: cover;
+                // padding: 50px;
                 transition: 0.5s;
             }
         }
@@ -276,10 +318,19 @@ section {
 
             a {
                 text-decoration: underline;
-                color: #b1d1f8;
+                color: skyblue;
             }
     
             
+        }
+    }
+
+
+    .captureDiv {
+        border: 1px solid #f5f5f5;
+        img {
+            width: 100%;
+            height: 100%;
         }
     }
 
@@ -288,5 +339,5 @@ section {
 
 
 .mainSection {
-    background-color: #b1d1f8;
+    background-color: $primary_color;
 }
