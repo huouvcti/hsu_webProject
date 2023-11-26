@@ -64,6 +64,7 @@ let timeout;
         let yValue = calcValue(event.y, window.innerHeight);
     
         [...features].forEach((feature) => {
+
         feature.style.transform = `translateX(${xValue}px) translateY(${yValue}px)`;
         });
         

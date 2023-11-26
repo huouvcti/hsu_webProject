@@ -643,6 +643,7 @@ section {
     }
 
     #section3 {
+        cursor: url('../assets/cursor.png') , auto;
 
         background-color: #496787;
 
@@ -693,8 +694,12 @@ section {
           
             .mouth {
               transform: scaleX(1.3) scaleY(2);
-              animation: idleMouth 3s ease-in-out infinite alternate;
+            //   animation: idleMouth 3s ease-in-out infinite alternate;
               transform-origin: center 80%;
+            }
+
+            .mouth:hover {
+                transform: scale(20);
             }
           }
           
