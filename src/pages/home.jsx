@@ -88,9 +88,7 @@ let timeout;
 
             <Link
                 to="section1"
-                spy={true}
-                smooth={true}
-                offset={0} // 수정된 offset
+                offset={0}
                 duration={500}
             >
                 <div className="section" id="section1">
@@ -104,9 +102,7 @@ let timeout;
 
             <Link
                 to="section2"
-                spy={true}
-                smooth={true}
-                offset={-100} // 수정된 offset
+                offset={-100}
                 duration={500}
             >
                 <div className="section" id="section2">
@@ -155,9 +151,7 @@ let timeout;
 
             <Link
                 to="section3"
-                spy={true}
-                smooth={true}
-                offset={-100} // 수정된 offset
+                offset={-100}
                 duration={500}
             >
                 <div className="section" id="section3">

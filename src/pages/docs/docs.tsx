@@ -10,7 +10,7 @@ const Docs = () => {
 
     const subMenu = [
         {link: "/docs/w3schools", title: "W3School", img: "https://thelifedge.com/wp-content/uploads/2021/10/W3Schools-Main.png"},
-        {link: "/docs/mdn", title: "mdn", img:"https://static.vecteezy.com/system/resources/previews/007/581/046/non_2x/mdn-letter-logo-design-on-black-background-mdn-creative-initials-letter-logo-concept-mdn-letter-design-vector.jpg"}
+        {link: "/docs/mdn", title: "MDN", img:"https://static.vecteezy.com/system/resources/previews/007/581/046/non_2x/mdn-letter-logo-design-on-black-background-mdn-creative-initials-letter-logo-concept-mdn-letter-design-vector.jpg"}
     ]
 
     return (

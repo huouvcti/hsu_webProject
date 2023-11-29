@@ -21,7 +21,7 @@ const Tools_base64 = () => {
     const [resultBase64, setResultBase64] = useState("");
 
     useEffect(()=>{
-        const encoded = btoa(string);
+        const encoded = btoa(encodeURIComponent(string));
         setResultBase64(encoded);
     },[string])
 
@@ -30,7 +30,7 @@ const Tools_base64 = () => {
     const [resultString, setResultString] = useState("");
 
     useEffect(()=>{
-        const decoded = atob(base64);
+        const decoded =  decodeURIComponent(atob(base64));
         setResultString(decoded);
     },[base64])
     
